@@ -3,9 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sqrt | Dev</title>
+  <title>sqrt | Developer</title>
 
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Mejora estética extra */
+    .hero {
+      margin-bottom: 40px;
+    }
+
+    .subtitle {
+      opacity: 0.7;
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+    /* Spotify más bonito */
+    .spotify-card {
+      background: linear-gradient(145deg, #121212, #1a1a1a);
+      padding: 25px;
+      border-radius: 20px;
+      margin-top: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+      transition: 0.3s;
+    }
+
+    .spotify-card:hover {
+      transform: translateY(-5px) scale(1.01);
+    }
+
+    .spotify-title {
+      color: #1DB954;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .spotify-btn {
+      margin-top: 15px;
+      background: #1DB954;
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .spotify-btn:hover {
+      background: #17a74a;
+    }
+
+    /* Separadores */
+    section {
+      margin: 60px 0;
+    }
+
+    /* Tarjetas pro */
+    .card {
+      background: linear-gradient(145deg, #161b22, #0d1117);
+      padding: 20px;
+      border-radius: 15px;
+      width: 260px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    }
+
+    /* Botón general */
+    .main-btn {
+      padding: 12px 25px;
+      border-radius: 25px;
+      border: none;
+      background: #00ffcc;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .main-btn:hover {
+      background: #00ccaa;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,16 +97,21 @@
 
   <div class="container">
 
-    <h1 class="glitch">Hola, soy sqrt</h1>
+    <!-- HERO -->
+    <div class="hero">
+      <h1 class="glitch">console.log("Hola, soy sqrt 🚀");</h1>
+      <p class="subtitle">Transformando ideas en código</p>
+    </div>
 
+    <!-- BIO -->
     <p class="bio">
-      Programador en PHP, JavaScript y Python. Me gusta crear aplicaciones web,
-      automatizar procesos y aprender nuevas tecnologías.
+      Programador en PHP, JavaScript y Python. Apasionado por crear
+      experiencias web modernas, automatizar procesos y construir soluciones reales.
     </p>
 
-    <!-- Spotify -->
+    <!-- SPOTIFY -->
     <section>
-      <h2>🎵 Mi canción favorita</h2>
+      <h2>🎵 Música que me inspira</h2>
 
       <div class="spotify-card">
 
@@ -37,7 +125,6 @@
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
         </iframe>
 
-        <!-- Barras animadas -->
         <div class="audio-bars">
           <span></span><span></span><span></span><span></span><span></span>
         </div>
@@ -49,48 +136,8 @@
       </div>
     </section>
 
-    <!-- Proyectos -->
+    <!-- PROYECTOS -->
     <section>
-      <h2>💻 Proyectos</h2>
-
-      <div class="projects">
-        <div class="card">
-          <h3>App PHP</h3>
-          <p>Sistema web dinámico con base de datos.</p>
-        </div>
-
-        <div class="card">
-          <h3>Script Python</h3>
-          <p>Automatización de tareas.</p>
-        </div>
-
-        <div class="card">
-          <h3>JS App</h3>
-          <p>Aplicación interactiva en navegador.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- GitHub -->
-    <section>
-      <a href="https://github.com/sqrt2004" target="_blank">
-        <button>Ver mi GitHub</button>
-      </a>
-    </section>
-
-    <!-- Terminal -->
-    <section class="terminal">
-      <p>> inicializando sistema...</p>
-      <p>> cargando perfil sqrt...</p>
-      <p>> acceso concedido ✔</p>
-    </section>
-
-  </div>
-
-  <script src="script.js"></script>
-
-</body>
-</html>    <section>
       <h2>💻 Proyectos</h2>
 
       <div class="projects">
@@ -102,29 +149,31 @@
 
         <div class="card">
           <h3>Script Python</h3>
-          <p>Automatización de tareas.</p>
+          <p>Automatización inteligente de tareas.</p>
         </div>
 
         <div class="card">
           <h3>JS App</h3>
-          <p>Aplicación interactiva en navegador.</p>
+          <p>Aplicación interactiva moderna.</p>
         </div>
 
       </div>
     </section>
 
-    <!-- GitHub -->
+    <!-- GITHUB -->
     <section>
+      <h2>🌐 Conecta conmigo</h2>
+
       <a href="https://github.com/sqrt2004" target="_blank">
-        <button>Ver mi GitHub</button>
+        <button class="main-btn">Ver mi GitHub</button>
       </a>
     </section>
 
-    <!-- Terminal -->
+    <!-- TERMINAL -->
     <section class="terminal">
-      <p>> inicializando sistema...</p>
-      <p>> cargando perfil sqrt...</p>
-      <p>> acceso concedido ✔</p>
+      <p>> iniciando sistema...</p>
+      <p>> cargando sqrt.dev...</p>
+      <p>> status: online ✔</p>
     </section>
 
   </div>
