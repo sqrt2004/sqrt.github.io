@@ -2,52 +2,71 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Página Personal</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #eee;
-      text-align: center;
-      padding: 40px;
-    }
-    .card {
-      background: #1e1e1e;
-      padding: 20px;
-      border-radius: 12px;
-      max-width: 700px;
-      margin: auto;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-    h1 {
-      color: #00d4ff;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sqrt | Dev</title>
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="card">
-    <h1>Hola, soy [sqrt]</h1>
+  <div class="container">
 
-    <p>
-      Soy programador con experiencia en PHP, JavaScript, Python y desarrollo web con HTTPS.
-      Me gusta crear aplicaciones dinámicas y aprender nuevas tecnologías.
+    <h1 class="glitch">Hola, soy sqrt</h1>
+
+    <p class="bio">
+      Programador en PHP, JavaScript y Python. Me gusta crear soluciones web,
+      automatizar procesos y aprender nuevas tecnologías.
     </p>
 
-    <h2>🎵 Mi canción favorita</h2>
+    <!-- Música -->
+    <section>
+      <h2>🎵 Mi canción favorita</h2>
+      <iframe 
+        src="https://www.youtube.com/embed/6Hn9yS9t6pY"
+        allowfullscreen>
+      </iframe>
+    </section>
 
-    <iframe width="100%" height="315"
-      src="https://www.youtube.com/embed/6Hn9yS9t6pY"
-      title="Flores de tu florero"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
+    <!-- Proyectos -->
+    <section>
+      <h2>💻 Proyectos</h2>
+      <div class="projects">
 
-    <p>
-      Me encanta "Flores de tu florero" de Los Charros del Lumaco.
-    </p>
+        <div class="card">
+          <h3>App PHP</h3>
+          <p>Sistema web dinámico con base de datos.</p>
+        </div>
+
+        <div class="card">
+          <h3>Script Python</h3>
+          <p>Automatización de tareas.</p>
+        </div>
+
+        <div class="card">
+          <h3>JS App</h3>
+          <p>Aplicación interactiva en navegador.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GitHub -->
+    <section>
+      <a href="https://github.com/tuusuario" target="_blank">
+        <button>Ver mi GitHub</button>
+      </a>
+    </section>
+
+    <!-- Terminal fake -->
+    <section class="terminal">
+      <p>> inicializando sistema...</p>
+      <p>> cargando perfil sqrt...</p>
+      <p>> acceso concedido ✔</p>
+    </section>
 
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
