@@ -6,46 +6,11 @@
   <title>sqrt | Dev</title>
 
   <link rel="stylesheet" href="style.css">
-
-  <style>
-    /* Mejora visual solo para Spotify */
-    .spotify-card {
-      background: #121212;
-      padding: 20px;
-      border-radius: 15px;
-      margin-top: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-      transition: transform 0.3s ease;
-    }
-
-    .spotify-card:hover {
-      transform: scale(1.02);
-    }
-
-    .spotify-title {
-      color: #1DB954;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .spotify-btn {
-      margin-top: 15px;
-      background: #1DB954;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 20px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .spotify-btn:hover {
-      background: #17a74a;
-    }
-  </style>
 </head>
 
 <body>
+
+  <canvas id="matrix"></canvas>
 
   <div class="container">
 
@@ -56,7 +21,7 @@
       automatizar procesos y aprender nuevas tecnologías.
     </p>
 
-    <!-- 🎵 Spotify bonito -->
+    <!-- Spotify -->
     <section>
       <h2>🎵 Mi canción favorita</h2>
 
@@ -72,6 +37,11 @@
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
         </iframe>
 
+        <!-- Barras animadas -->
+        <div class="audio-bars">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
         <a href="https://open.spotify.com/track/6r6IPuFvUX72kQGc9b46rk" target="_blank">
           <button class="spotify-btn">Abrir en Spotify</button>
         </a>
@@ -81,6 +51,46 @@
 
     <!-- Proyectos -->
     <section>
+      <h2>💻 Proyectos</h2>
+
+      <div class="projects">
+        <div class="card">
+          <h3>App PHP</h3>
+          <p>Sistema web dinámico con base de datos.</p>
+        </div>
+
+        <div class="card">
+          <h3>Script Python</h3>
+          <p>Automatización de tareas.</p>
+        </div>
+
+        <div class="card">
+          <h3>JS App</h3>
+          <p>Aplicación interactiva en navegador.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub -->
+    <section>
+      <a href="https://github.com/sqrt2004" target="_blank">
+        <button>Ver mi GitHub</button>
+      </a>
+    </section>
+
+    <!-- Terminal -->
+    <section class="terminal">
+      <p>> inicializando sistema...</p>
+      <p>> cargando perfil sqrt...</p>
+      <p>> acceso concedido ✔</p>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>    <section>
       <h2>💻 Proyectos</h2>
 
       <div class="projects">
